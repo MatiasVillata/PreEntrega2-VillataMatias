@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2? family= Karla:wght@600;700 & family= Poltawski+Nowy:ital,wght@0,400;0,700;1,400 & display=swap' );
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body{
+    text-decoration: none;
+  
+}
+
+/* HEADER */
+
+.header{
+    background-image: url(../Imagenes/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid #946b1a;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 8fr 5fr;
+    gap: 5px;
+}
+   
+    
+    
+
+.logo img{
+    width: 290px;
+}
+
+.logo img:hover{
+    scale: 105%;
+    transition: 0.7s;
+}
+
+
+.div_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.menu{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 35px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+    
+
+
+
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 8px;
+    color: #fffdfc;
+    display: block;
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li a:hover{
+    text-shadow: 0 0 3px #03d8e8;
+    scale: 105%;
+    transition: 0.7s;
+}
+
+
+.encabezado{
+    grid-row: 2/3;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+   
+ 
+}
+   
+.encabezado h1{
+    
+    text-align: end;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-left: 500px;
+    margin-right:40px ;
+    margin-top: 85px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 3px #03d8e8;
+    text-shadow: 0 0 15px #03d8e8;
+    text-shadow: 0 0 25px #03d8e8;
+ 
+
+}
+
+.botonn{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1{
+    display: flex;
+    justify-content: center;
+    padding: 8px 17px;
+    background-color: #1e3869;
+    color: #f9fafc;
+    text-transform: uppercase;
+    font-family: 'Poltawski Nowy', serif;
+    border: 1.5px solid #946b1a;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 15px;
+   
+}
+
+.btn-1:hover {
+    background-color: #154777;
+    text-shadow: 0 0 5px #03d8e8;
+}
+
+
+
+/* CORTE */
+
+#corte{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border-bottom: 1px solid #47a9d6;
+    background: linear-gradient(245.59deg, #186ca3 0%, #5ba5cf 28.53%, #94dafac0 75.2%);
+    
+    
+
+    
+}
+  
+
+
+#corte .corte-imagen img{
+    width: 280px;
+    padding: 50px;
+    
+    
+}
+
+.corte-texto{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 50px;
+    
+}
+
+.corte-texto h2{
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 700;
+    font-size: 70px;
+    color: whitesmoke;
+    text-shadow: 0 0 40px #af8d1e;
+}
+
+
+/* CARRUSEL */
+
+.carrusel{
+    background-color: rgb(3, 40, 54) ;
+    background-image: url(../Imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 90px;
+    padding-top: 50px;
+    border-bottom: 3px solid #946b1a;
+    
+}
+
+
+#carouselExampleIndicators{
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-top: 2px solid #214b81;
+    border-bottom: 2px solid #214b81;
+   
+}
+
+.carrusel-title{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    gap: 30px 0;
+    color:#f9fafc
+}
+
+.carrusel-title h2{
+    text-transform: uppercase;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 700;
+    font-size: 70px;
+    text-shadow: 0 0 10px #3bb3e2;
+}
+
+.carrusel-title p{
+    font-family: 'Poltawski Nowy', serif;
+    font-size: 20px;
+}
+
+
+
+
+
+.btn-2{
+    display: flex;
+    justify-content: center; 
+    margin-top: 35px;
+   }
+
+.btn-2 a{
+    display: flex;
+    justify-content: center;
+    padding: 8px 17px;
+    background-color: #1e3869;
+    color: #f9fafc;
+    text-transform: uppercase;
+    font-family: 'Poltawski Nowy', serif;
+    border: 1.5px solid #946b1a;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.btn-2 a:hover {
+    background-color: #154777;
+    text-shadow: 0 0 5px #03d8e8;
+}
+
+
+/* PRODUCTOS Y COCTELES   */
+
+.productos{
+    background-color: #f0ebde;
+}
+
+.productos-title{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    gap: 30px 0;
+    
+    
+}
+
+.productos-title h2{
+    text-transform: uppercase;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 700;
+    font-size: 70px;
+    color:#024a7a;
+    text-shadow: 0 0 5px #b17301;
+}
+
+
+#seccion2{
+    background-color: #e7decc;
+    padding-bottom: 75px;
+}
+
+    
+    
+.seccion2-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 50px;
+    
+}
+
+.seccion2-title h2{
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 700;
+    font-size: 40px;
+    
+
+}
+
+
+  
+.coctel {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    width: 100%;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.coctel{ 
+    padding: 30px;
+}
+
+.coctel-img{
+    width: 100%;
+    height: auto;
+}
+
+.coctel img{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border: 2px solid #946b1a;
+}
+
+.coctel .coctel-text{
+    padding: 20px;
+    
+}
+
+.coctel .coctel-text h2{
+    padding: 10px;
+}
+
+.coctel .coctel-text p{
+    padding: 10px;
+}
+    
+.btn-3{
+    display: flex;
+    justify-content: center; 
+    margin-top: 75px;
+}
+
+.btn-3 a{
+    display: flex;
+    justify-content: center;
+    padding: 8px 17px;
+    background-color: #1e3869;
+    color: #f9fafc;
+    text-transform: uppercase;
+    font-family: 'Poltawski Nowy', serif;
+    border: 1.5px solid #946b1a;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.btn-3 a:hover {
+    background-color: #154777;
+    text-shadow: 0 0 5px #03d8e8;
+}
+
+.publicidad img{
+   width: 100%;
+   height: auto;
+
+}
+
+/* FOOTER */
+
+#footer{
+    background-color: rgb(26, 24, 24);
+    
+}
+
+.redes{
+    padding-top: 75px;
+    font-size: 30px;
+    border-top: 2px solid #946b1a;
+}
+
+#footer .redes ul  {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.copy p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.copy{
+    padding-bottom: 60px;
+}
+
+
+/* COCTELES HTML */
+
+.coctel-receta{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
+}
+
+.coctel-receta h3{
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.coctel-receta ul li{
+    padding-bottom: 5px;
+}
+
+
+/* SOBRE NOSOTROS HTML */
+
+
+
+.historia{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    gap: 30px 0;
+    text-transform: uppercase;
+}
+
+.historia-text{
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.historia-text img{
+    float: left;
+    margin-right: 10px;
+}
+
+/* CONTACTO HTML */
+
+.contacto-title{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
+}
+
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+.contacto-contenedor{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align:center;
+    text-align: center;
+    width:340px;
+    
+}
+
+.contacto-contenedor div input{
+    margin: 5px;
+}
+
+.form{
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+.dropdown{
+    display:none;
+    position: absolute !important;
+    right: 2rem !important;
+}
+ 
+
+
+
+@media(max-width: 576px){
+
+   
+
+    .dropdown .btn{
+        font-size: 15px;
+        background-color: rgb(0, 83, 151) !important;
+        border:1px solid #946b1a !important;
+
+    }
+
+    .dropdown-menu {
+        background-color: rgba(78, 78, 78, 0.308) !important;
+        backdrop-filter: blur(3px);
+        width: 100vh;
+        height: auto;
+        text-align: center !important;
+        justify-content: center !important;
+   
+       
+      
+    }
+
+  
+    
+   
+    
+    .header{
+        grid-template-rows: 2fr 5fr 5fr;
+        
+    }
+    
+    .lista-menu{
+        display: none;
+    }
+
+    .menu .hamburguesa{
+        display: block;
+    }
+        
+    
+    .menu{
+        background-color: rgba(2, 107, 177, 0.411); 
+        margin-top: 0;
+    }
+        
+    
+    
+    .logo{
+      padding: auto;
+      margin: auto;
+    }
+
+   
+    
+    .botonn{
+        display: none;
+    }
+
+    .dropdown{
+        display: block;
+    }
+
+
+    
+    .encabezado h1{
+        text-align:center;
+        font-family: 'Poltawski Nowy', serif;
+        font-weight: 700;
+        font-size: 1.7rem;
+        padding: 150px 30px;
+        margin: auto;
+        color: #f9fafc;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        
+        text-shadow: 10px 10px 10px #021c31;
+
+        
+        
+       
+    }
+    .encabezado{
+       
+        align-items: center;
+        width: auto;
+        height:auto;
+        padding: 10px;
+    }
+
+    #corte{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: -50px;
+    }
+    
+    #corte .corte-imagen img{
+        width: 280px;
+        grid-row: 1;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .corte-texto{
+        display: flex;
+        grid-row: 2;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    
+    .corte-texto h2{
+        font-family: 'Poltawski Nowy', serif;
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+
+
+
+    .carrusel{
+        background-color: rgba(3, 184, 255, 0.589) ;
+        padding-bottom: 90px;
+        border-bottom: 3px solid #946b1a;
+    
+    }
+    
+    
+    #carouselExampleIndicators{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-top:none;
+        border-bottom: none;
+       
+    }
+    
+    
+       
+     
+    
+
+
+    #seccion2{
+        background-color: #e7decc;
+        padding-bottom: 75px;
+    }
+    
+        
+        
+    .seccion2-title{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-transform: uppercase;
+        padding-top: 30px;
+        padding-bottom: 0;
+        
+        
+    }
+    
+    .seccion2-title h2{
+        font-family: 'Poltawski Nowy', serif;
+        font-weight: 700;
+        font-size: 40px;
+        
+    
+    }
+    
+    
+      
+    .coctel {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        justify-content: space-between;
+        text-transform: uppercase;
+        padding: auto;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}    
