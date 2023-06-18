@@ -10,42 +10,51 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    
 }
+    
 
 body{
     text-decoration: none;
-  
+}
+    
+html{
+    font-size: 16px;
 }
 
 /* HEADER */
 
 .header{
-    background-image: url(../Imagenes/header.jpg);
+    display: grid;
+    grid-template-rows: 1fr 7fr 2fr;
+    background-image: url(../Imagenes/headerfondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 5px solid #946b1a;
+    
     width: 100%;
     height: 100vh;
     margin-top: 0;
     align-items: center;
-    display: grid;
-    grid-template-rows: 1fr 8fr 5fr;
     gap: 5px;
 }
    
+.svg{
+    position:absolute;
+    bottom:-12%;    
     
-    
+}    
 
-.logo img{
-    width: 290px;
+    
+.menu .logo img{
+    width: 250px;
 }
 
 .logo img:hover{
     scale: 105%;
     transition: 0.7s;
 }
+
+
 
 
 .div_navbar{
@@ -56,6 +65,7 @@ body{
 }
 
 .menu{
+    width: 100%;
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 35px;
@@ -66,18 +76,18 @@ body{
     background-color: rgba(0, 0, 0, 0.144);
 }
     
-
-
-
-
 .menu .navbar ul li{
     position: relative;
     float: left;
 }
 
+
+
+
+
 .menu .navbar ul li a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     padding: 0 8px;
     color: #fffdfc;
     display: block;
@@ -89,50 +99,49 @@ body{
 .menu .navbar ul li a:hover{
     text-shadow: 0 0 3px #03d8e8;
     scale: 105%;
-    transition: 0.7s;
+    transition: 0.4s;
 }
 
+.encabezado-titulo{
 
-.encabezado{
     grid-row: 2/3;
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 10px;
-   
+ 
  
 }
    
 .encabezado h1{
     
-    text-align: end;
+    text-align: center;
     font-family: 'Poltawski Nowy', serif;
     font-weight: 700;
-    font-size: 35px;
-    margin-left: 500px;
-    margin-right:40px ;
-    margin-top: 85px;
+    font-size: 3em;
     color: #f9fafc;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-shadow: 0 0 3px #03d8e8;
     text-shadow: 0 0 15px #03d8e8;
     text-shadow: 0 0 25px #03d8e8;
- 
-
 }
 
 .botonn{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+ 
+
+
+   display: flex;
+   position: relative;
+   grid-row: 3/4;
+   justify-content: center;
+   margin-top: 50px;
 }
 
 .btn-1{
     display: flex;
     justify-content: center;
+    align-items: center;
+    
     padding: 8px 17px;
     background-color: #1e3869;
     color: #f9fafc;
@@ -151,106 +160,138 @@ body{
 }
 
 
+/* SAPPHIRE */
 
-/* CORTE */
-
-#corte{
+.sapphire{
     display: grid;
-    grid-template-columns: 30% 70%;
-    border-bottom: 1px solid #47a9d6;
-    background: linear-gradient(245.59deg, #186ca3 0%, #5ba5cf 28.53%, #94dafac0 75.2%);
+    width: 100%;
+    grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+    margin-top: 60px;
+    gap: 30px;
+    padding: 40px;
+    background: linear-gradient(#d3d3d3 20%, #038a946c , #038a94dc ), url(../Imagenes/fondo6.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.sapphire img{
+    display: flex;
+    width: 80%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 0 15px #2b2c2c;
+}
     
     
 
     
+.sapphire img:hover{
+    transition: 0.1s;
+    scale: 101%;
+    border: 2px solid#946b1a;
 }
   
 
 
-#corte .corte-imagen img{
-    width: 280px;
-    padding: 50px;
-    
-    
-}
+    .sapphire1{
+        width: 100%;
+        grid-column: 2/3;
+    }
 
-.corte-texto{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    margin: 50px;
-    
-}
+    .sapphire2{
+        width: 100%;
+    }
 
-.corte-texto h2{
-    font-family: 'Poltawski Nowy', serif;
-    font-weight: 700;
-    font-size: 70px;
-    color: whitesmoke;
-    text-shadow: 0 0 40px #af8d1e;
-}
+    .sapphire3{
+    width: 100%;
+    }
+
+
 
 
 /* CARRUSEL */
 
 .carrusel{
-    background-color: rgb(3, 40, 54) ;
-    background-image: url(../Imagenes/fondo.jpg);
+    background: linear-gradient(#038a94dc, #7fd9df6c, #e6e6e6), url(../Imagenes/fondo6.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 90px;
-    padding-top: 50px;
-    border-bottom: 3px solid #946b1a;
-    
+    padding: 70px;
 }
-
-
+    
+    
+.carrusel-border{
+    display: flex;
+    border-radius: 5%;
+    border: 2px solid #b17301;
+    box-shadow: 0 0 15px #2b2c2c;
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    gap: 30px 0;
+    background-color: #12577298;
+}
 #carouselExampleIndicators{
-    width: 60%;
+    width: 80%;
     height: auto;
     justify-content: center;
     align-items: center;
     margin: auto;
-    border-top: 2px solid #214b81;
-    border-bottom: 2px solid #214b81;
-   
+}
+  
+#carouselExampleIndicators .carousel-item img{
+    border: 4px solid #dfdfdf;
+    border-radius: 5px;
 }
 
-.carrusel-title{
+.carrusel-container{
+    display: flex;
+}
+
+.carrusel .carrusel-titulo{
     display: flex;
     flex-direction: column; 
     align-items: center;
     padding: 40px;
     text-align: center;
     gap: 30px 0;
-    color:#f9fafc
 }
 
+.carrusel .carrusel-titulo h2{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 0 0 10px #2e2e2e;
+}
+
+.carrusel .carrusel-texto{
+    margin: 10px 50px;
+}
+    
+
+.carrusel .carrusel-texto p{
+    color: white;
+    text-align: center;
+}
+   
 .carrusel-title h2{
     text-transform: uppercase;
     font-family: 'Poltawski Nowy', serif;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 500%;
     text-shadow: 0 0 10px #3bb3e2;
 }
-
-.carrusel-title p{
-    font-family: 'Poltawski Nowy', serif;
-    font-size: 20px;
-}
-
-
-
-
 
 .btn-2{
     display: flex;
     justify-content: center; 
     margin-top: 35px;
-   }
+}
 
 .btn-2 a{
     display: flex;
@@ -272,22 +313,30 @@ body{
 }
 
 
-/* PRODUCTOS Y COCTELES   */
+/*  PAGINA PRODUCTOS */
 
 .productos{
-    background-color: #f0ebde;
+    margin-top: 50px;
+    background: linear-gradient(#fff 0%, #19abb6b2 , #dfdfdfc5 ), url(../Imagenes/fondo6.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px;
 }
-
+    
+    
 .productos-title{
+
+
     display: flex;
     flex-direction: column; 
     align-items: center;
     padding: 40px;
     text-align: center;
     gap: 30px 0;
-    
-    
 }
+    
+    
 
 .productos-title h2{
     text-transform: uppercase;
@@ -299,12 +348,66 @@ body{
 }
 
 
+/* COCTELES   */
+
 #seccion2{
-    background-color: #e7decc;
+    padding-top: 60px;
     padding-bottom: 75px;
+    background: linear-gradient(#e6e6e6,#f1cf8bc4, #f1cf8bc4 ,#f1cf8ba4), url(../Imagenes/fondo6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+
+.coctel-titulo{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    width: 100%;
+}
+
+
+.coctel-titulo .coctel-imagen img{
+    width:80%;
+    height: auto;
+    grid-column: 1/2;
+    margin-bottom: -80px;
+    margin-top: -80px;
+}
     
+
+
+.coctel-titulo .coctel-imagen2 img{
+    width:80%;
+    height: auto;
+    grid-column: 3/4;
+    margin-bottom: -80px;
+    margin-top: -80px;
+    transform: rotatey(180deg);
+}
+
+.coctel-texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+    grid-column: 2/3;
+}
+
+ 
+
+    
+
+.coctel-texto h2{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 0 0 10px #2e2e2e;
+}
     
 .seccion2-title{
     display: flex;
@@ -312,35 +415,47 @@ body{
     justify-content: center;
     text-transform: uppercase;
     padding: 50px;
-    
 }
+
+
+
+    
+    
+    
 
 .seccion2-title h2{
+    color: white;
+    text-transform: uppercase;
     font-family: 'Poltawski Nowy', serif;
     font-weight: 700;
-    font-size: 40px;
-    
-
+    font-size: 50px;
+    text-shadow: 0 0 10px #2e2e2e;
 }
-
-
-  
+    
 .coctel {
     display: grid;
     grid-template-columns: 2fr 5fr;
     width: 100%;
     justify-content: space-between;
     text-transform: uppercase;
+    margin-top: 60px;
+}
+    
+.coctel{ 
+    padding: 0 60px;
 }
 
-.coctel{ 
-    padding: 30px;
-}
+
+
+  
+
+   
 
 .coctel-img{
     width: 100%;
     height: auto;
 }
+   
 
 .coctel img{
     width: 100%;
@@ -349,10 +464,36 @@ body{
     border: 2px solid #946b1a;
 }
 
-.coctel .coctel-text{
-    padding: 20px;
-    
+.coctel-ingredientes .coctel-receta{
+    padding-top: 30px;
 }
+
+.coctel-ingredientes h3{
+    margin-left: 60px;
+}
+
+.coctel-ingredientes ul{
+    margin-left: 30px;
+}
+
+.coctel-receta{
+    margin: 0 100px;
+}
+ 
+.receta{
+    text-align: center;
+    margin: 0 100px;
+}
+
+.receta ul li {
+    margin-bottom: 30px;
+}
+
+.coctel .coctel-text{
+    padding-left: 20px;
+    padding-right: 60px;
+}
+    
 
 .coctel .coctel-text h2{
     padding: 10px;
@@ -387,12 +528,23 @@ body{
     text-shadow: 0 0 5px #03d8e8;
 }
 
-.publicidad img{
-   width: 100%;
-   height: auto;
+/* COCTELES HTML */
 
+.coctel-receta{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
 }
 
+.coctel-receta h3{
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.coctel-receta ul li{
+    padding-bottom: 5px;
+}
 
 /* FOOTER */
 
@@ -402,9 +554,10 @@ body{
 }
 
 .redes{
-    padding-top: 75px;
+    padding-top: 65px;
     font-size: 30px;
     border-top: 2px solid #946b1a;
+    margin-top: -20px;
 }
 
 #footer .redes ul  {
@@ -427,54 +580,106 @@ body{
 }
 
 
-/* COCTELES HTML */
-
-.coctel-receta{
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    padding: 35px;
-}
-
-.coctel-receta h3{
-    text-transform: uppercase;
-    padding-bottom: 15px;
-}
-
-.coctel-receta ul li{
-    padding-bottom: 5px;
-}
 
 
 /* SOBRE NOSOTROS HTML */
 
+#main-historia{
+    background: linear-gradient(#049fe7e0,#29bcd6a4), url(../Imagenes/fondo6.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
-.historia{
+
+#main-historia .historia-text{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+    
+
+#main-historia .historia{
     display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 30px;
+    justify-content: center;
     text-align: center;
-    gap: 30px 0;
+    padding: 50px;
+}
+    
+
+#main-historia .historia h2{
+    color: white;
     text-transform: uppercase;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 0 0 10px #2e2e2e;
+}
+    
+.historia-text .botanica{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    gap: 30px;
+}
+  
+
+
+.historia-text .botanica img{
+    width: 100%;
+    border: 2px solid #b17301;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #021c31;
+
 }
 
-.historia-text{
-    width: 80%;
-    height: auto;
-    padding: 30px;
-    margin: 10px;
-    line-height: 1.5;
-    font-size: 16px;
+.historia-text .botanica-texto{
+    width: 100%;
+    padding: 0 60px;
+    margin: auto;
 }
 
-.historia-text img{
-    float: left;
-    margin-right: 10px;
+.historia-text .botanica-texto h3{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+    
+    
+.historia-text .ingredientes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    gap: 30px;
+}
+
+.historia-text .ingredientes img{
+    width: 100%;
+    border: 2px solid #b17301;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #021c31;
+}
+   
+.historia-text .ingredientes-texto{
+    width: 100%;
+    padding: 0 60px;
+}
+
+.historia-text .ingredientes-texto h3{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    
 }
 
 /* CONTACTO HTML */
+
+
+    
+    
+
+
+
 
 .contacto-title{
     position: relative;
@@ -491,15 +696,23 @@ body{
     align-items: center;
     justify-content: center;
     padding-bottom: 150px;
+    background: linear-gradient(#e6e6e6 0%, #0799a394,  #037794dc), url(../Imagenes/fondo6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
 }
+
 .contacto-contenedor{
     padding: 50px 55px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.822);
+    border-radius: 5px;
     text-align:center;
     text-align: center;
     width:340px;
-    
+    background-color: #00000031;
 }
+    
 
 .contacto-contenedor div input{
     margin: 5px;
@@ -520,9 +733,11 @@ text-align: left;
 
 
 
-@media(max-width: 576px){
+@media(max-width: 657px){
 
-   
+   .svg{
+    display: none;
+   }
 
     .dropdown .btn{
         font-size: 15px;
@@ -538,19 +753,19 @@ text-align: left;
         height: auto;
         text-align: center !important;
         justify-content: center !important;
-   
-       
-      
     }
-
-  
-    
    
-    
     .header{
         grid-template-rows: 2fr 5fr 5fr;
-        
     }
+       
+      
+
+    
+    
+   
+    
+        
     
     .lista-menu{
         display: none;
@@ -559,23 +774,24 @@ text-align: left;
     .menu .hamburguesa{
         display: block;
     }
-        
-    
+
     .menu{
-        background-color: rgba(2, 107, 177, 0.411); 
+   
+   
+        background-color: rgba(2, 107, 177, 0); 
         margin-top: 0;
     }
         
-    
-    
     .logo{
+    
+    
       padding: auto;
       margin: auto;
     }
 
+    .botonn{
    
     
-    .botonn{
         display: none;
     }
 
@@ -583,26 +799,26 @@ text-align: left;
         display: block;
     }
 
+    .encabezado h1{
 
     
-    .encabezado h1{
         text-align:center;
         font-family: 'Poltawski Nowy', serif;
         font-weight: 700;
-        font-size: 1.7rem;
+        font-size: 1.7em;
         padding: 150px 30px;
         margin: auto;
         color: #f9fafc;
         text-transform: uppercase;
         letter-spacing: 5px;
-        
         text-shadow: 10px 10px 10px #021c31;
+    }
+        
+    .encabezado{
 
         
         
        
-    }
-    .encabezado{
        
         align-items: center;
         width: auto;
@@ -610,28 +826,41 @@ text-align: left;
         padding: 10px;
     }
 
-    #corte{
+    .coctel-titulo{
+
+
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         justify-content: center;
         text-align: center;
         gap: -50px;
     }
     
-    #corte .corte-imagen img{
-        width: 280px;
+    .coctel-titulo .corte-imagen img{
+        width: 100%;
         grid-row: 1;
         margin-bottom: 0;
         padding-bottom: 0;
+        grid-column: 1/2;
     }
-    
+
+    .coctel-titulo .corte-imagen2 img{
+        width: 100%;
+        grid-row: 1;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        grid-column: 3/4;
+    }
+        
     .corte-texto{
+    
         display: flex;
-        grid-row: 2;
+        grid-row: 1;
         padding-top: 0;
         margin-top: 0;
+        grid-column: 2/3;
     }
     
     .corte-texto h2{
@@ -640,18 +869,18 @@ text-align: left;
         font-size: 50px;
     }
 
-
-
-
     .carrusel{
+
+
+
         background-color: rgba(3, 184, 255, 0.589) ;
         padding-bottom: 90px;
-        border-bottom: 3px solid #946b1a;
-    
     }
-    
-    
+        
     #carouselExampleIndicators{
+    
+    
+    
         width: 100%;
         height: auto;
         justify-content: center;
@@ -659,44 +888,48 @@ text-align: left;
         margin: auto;
         border-top:none;
         border-bottom: none;
+    }
        
+    .carrusel-titulo{
+    
+        padding: 0 100px;
+    }
+
+    .carrusel .carrusel-titulo h2{
+        font-size: 40px;
+    }   
+     
+    .carrusel .carrusel-texto p{
+        text-align: center;
     }
     
-    
-       
-     
-    
-
-
     #seccion2{
+
         background-color: #e7decc;
         padding-bottom: 75px;
     }
     
-        
-        
     .seccion2-title{
+        
+        
         display: flex;
         text-align: center;
         justify-content: center;
         text-transform: uppercase;
         padding-top: 30px;
         padding-bottom: 0;
-        
-        
     }
-    
+        
     .seccion2-title h2{
+        
+    
         font-family: 'Poltawski Nowy', serif;
         font-weight: 700;
         font-size: 40px;
-        
-    
     }
-    
-    
-      
+        
     .coctel {
+    
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -709,4 +942,160 @@ text-align: left;
         text-align: center;
     }
     
+    
+      
+    
+    #sapphire{
+        
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    
+    .sapphire{
+    
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+        margin-top: 0px;
+        gap: 5px;
+    }
+    
+    .sapphire img{
+        display: flex;
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+        box-shadow: 0 0 15px #2b2c2c;
+        
+      
+    }
+    
+    .sapphire img:hover{
+        transition: 0.1s;
+        scale: 101%;
+        border: 2px solid#946b1a;
+    }
+    
+    .sapphire1{
+    
+    
+     width: 100%;
+     grid-row: 1/2;
+    }
+    
+    .sapphire2{
+        width: 100%;
+    }
+    
+    .sapphire3{
+        width: 100%;
+    }
+
+    .historia-text .botanica {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .historia-text .ingredientes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .historia-text .ingredientes-texto{
+
+        grid-row: 2/3;
+    }
+
+    .historia-text .ingredientes img{
+   
+        grid-row: 1/2;
+    }
+    
 }    
+
+
+
+@media(max-width: 1200px){
+    
+    .historia-text .botanica {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+       
+        
+    }
+
+    .botanica-texto h3{
+       
+        text-align: start;
+    }
+
+    .historia-text .ingredientes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+
+    }
+
+    .historia-text .ingredientes-texto{
+    
+        grid-row: 2/3;
+        text-align: start;
+
+    }
+
+    .historia-text .botanica-texto{
+        padding-top: 0;
+        margin-top: 0;
+        text-align: start;
+    }
+   
+    .historia-text .ingredientes img{
+        grid-row: 1/2;
+    }
+       
+}
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
