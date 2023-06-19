@@ -9,6 +9,7 @@
 
 body {
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 html {
@@ -165,7 +166,7 @@ html {
 .carrusel .carrusel-border {
   display: flex;
   border-radius: 5%;
-  border: 2px solid #b17301;
+  border: 2px solid #946b1a;
   box-shadow: 0 0 15px #2b2c2c;
   display: flex;
   flex-direction: column;
@@ -404,12 +405,30 @@ html {
 }
 #footer .copy {
   padding-bottom: 60px;
+  border-bottom: 2px solid #946b1a;
 }
 #footer .copy p {
   color: white;
   display: flex;
   justify-content: center;
   gap: 100px;
+}
+#footer .copy ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 30px;
+  gap: 70px;
+  text-transform: uppercase;
+}
+#footer .copy ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+#footer .copy ul li a:hover {
+  color: #1f4ba8;
+  font-weight: 700;
 }
 
 /* PRODUCTOS PAGE*/
@@ -435,7 +454,7 @@ html {
   font-weight: 700;
   font-size: 70px;
   color: #024a7a;
-  text-shadow: 0 0 5px #b17301;
+  text-shadow: 0 0 5px #946b1a;
 }
 .productos .coctel {
   display: grid;
@@ -502,7 +521,7 @@ html {
 }
 #main-historia .historia-text .botanica img {
   width: 100%;
-  border: 2px solid #b17301;
+  border: 2px solid #946b1a;
   border-radius: 5px;
   box-shadow: 0 0 15px #021c31;
 }
@@ -523,7 +542,7 @@ html {
 }
 #main-historia .historia-text .ingredientes img {
   width: 100%;
-  border: 2px solid #b17301;
+  border: 2px solid #946b1a;
   border-radius: 5px;
   box-shadow: 0 0 15px #021c31;
 }
@@ -581,7 +600,7 @@ html {
 }
 
 /* MEDIA QUERY*/
-@media (max-width: 657px) {
+@media (max-width: 670px) {
   .header {
     grid-template-rows: 2fr 5fr 5fr;
   }
@@ -604,17 +623,17 @@ html {
   }
   .header .menu .dropdown .btn {
     font-size: 15px;
-    background-color: rgb(0, 83, 151) !important;
-    border: 1px solid #946b1a !important;
+    background-color: rgb(0, 83, 151);
+    border: 1px solid #946b1a;
   }
   .header .menu .dropdown .dropdown-menu {
-    background-color: rgba(78, 78, 78, 0.308) !important;
+    background-color: rgba(78, 78, 78, 0.308);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
     width: 100vh;
     height: auto;
-    text-align: center !important;
-    justify-content: center !important;
+    text-align: center;
+    justify-content: center;
   }
   .header .encabezado {
     align-items: start;
