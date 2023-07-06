@@ -54,14 +54,19 @@ html{
         justify-content: space-between;
         background-color: rgba(0, 0, 0, 0.144);
 
-        .logo img{
-            width: 250px;
-        }
+        .logo{
+            
+            img{
+                width: 250px;
+            }
+            
+            &:hover{
+                scale: 105%;
+                transition: 0.7s;
+            }
+        } 
+        
 
-        .logo img:hover{
-            scale: 105%;
-            transition: 0.7s;
-        }
 
         .navbar{
             ul li{
@@ -79,7 +84,7 @@ html{
                     text-transform: uppercase;
                 }
 
-                a:hover{
+                &:hover{
                     text-shadow: 0 0 3px #03d8e8;
                     scale: 105%;
                     transition: 0.4s;
@@ -146,12 +151,12 @@ html{
                 text-decoration: none;
                 font-size: 15px;
                
+                &:hover {
+                    background-color: #154777;
+                    text-shadow: 0 0 5px #03d8e8;
+                }
             }
 
-            .btn-1:hover {
-                background-color: #154777;
-                text-shadow: 0 0 5px #03d8e8;
-            }
             
         }
        
@@ -180,13 +185,14 @@ html{
         border-radius: 10%;
         box-shadow: 0 0 15px #2b2c2c;
         transition: 0.1s;
+        
+        &:hover{
+            scale: 101%;
+            border: 2px solid $colorborder;
+        }
+            
     }
 
-    img:hover{
-        scale: 101%;
-        border: 2px solid $colorborder;
-    }
-        
 
     .sapphire1{
         width: 100%;
@@ -209,7 +215,7 @@ html{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 70px;
+    padding: 95px;
 
     .carrusel-border{
         display: flex;
@@ -284,13 +290,15 @@ html{
                     border-radius: 4px;
                     text-decoration: none;
                     font-size: 15px;
+                   
+                    &:hover {
+                        background-color: #154777;
+                        text-shadow: 0 0 5px #03d8e8;
+                    }
                 }
+                
             }
 
-            .btn-2 a:hover {
-                background-color: #154777;
-                text-shadow: 0 0 5px #03d8e8;
-            }
 
             .carousel-caption h5{
                 background-color: #08556894;
@@ -473,13 +481,14 @@ html{
                     border-radius: 4px;
                     text-decoration: none;
                     font-size: 15px;
+                    
+                    &:hover {
+                        background-color: #154777;
+                        text-shadow: 0 0 5px #03d8e8;
+                    }
                 }
             }
 
-            .btn-3 a:hover {
-                background-color: #154777;
-                text-shadow: 0 0 5px #03d8e8;
-            }
             
         }
     }
@@ -525,12 +534,13 @@ html{
                 text-decoration: none;
                 color: white;
                 font-weight: 600;
+                
+                &:hover{
+                    color: #1f4ba8;
+                    font-weight: 700;
+                }
             }
 
-            li a:hover{
-                color: #1f4ba8;
-                font-weight: 700;
-            }
                 
         }
     }
@@ -758,6 +768,11 @@ html{
                 a{
                     width: 100%;
                 }
+
+                img{
+                    width: 15em;
+                }
+                
             }
 
             .navbar{
@@ -775,14 +790,16 @@ html{
                 }
 
                 .dropdown-menu {
+    
                     background-color: rgba(78, 78, 78, 0.308) ;
                     backdrop-filter: blur(3px);
-                    width: 100vh;
+                    width: auto;
                     height: auto;
                     text-align: center ;
                     justify-content: center ;
 
                 }
+
             
             }
     
@@ -865,7 +882,7 @@ html{
          
             
             .carrusel-titulo{
-                padding: 0 100px;
+                padding: 0 0px;
 
                 h2{
                     font-size: 40px;
@@ -897,6 +914,20 @@ html{
         background-color: #e7decc;
         padding-bottom: 75px;
 
+        .coctel-titulo{
+                
+            .coctel-texto{
+                h2{
+                    font-size: 35px;
+                }
+            }
+            img{
+                display: none;
+            }
+        }
+                
+
+
         .coctel {
             display: grid;
             grid-template-columns: 1fr;
@@ -909,6 +940,7 @@ html{
             justify-content: center;
             text-align: center;
 
+           
             .coctel-text{
                 padding: 20px;
 
@@ -1006,9 +1038,54 @@ html{
         }
     }
 
+    #footer{
+        
+        .redes{
+            padding-top: 65px;
+            font-size: 30px;
+            border-top: 2px solid $colorborder;
+            margin-top: -20px;
+    
+            ul  {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                gap: 30px;
+                padding: 0;
+            }
+        }
+    
+        .copy{
+            width: 100%;
+
+            P{
+                text-align: center;
+            }
+
+            ul{
+                display: block;
+                width: 100%;
+                
+                
+                li {
+                    text-align: center;
+                }
+            }
+        }
+    }
+                    
+                  
+                   
+
 }
 
 @media(max-width: 950px){
+
+    .header{
+        .svg{
+            display: none;
+        }
+    }
      
     #main-historia{
 

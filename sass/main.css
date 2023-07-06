@@ -47,7 +47,7 @@ html {
 .header .menu .logo img {
   width: 250px;
 }
-.header .menu .logo img:hover {
+.header .menu .logo:hover {
   scale: 105%;
   transition: 0.7s;
 }
@@ -65,7 +65,7 @@ html {
   font-weight: 600;
   text-transform: uppercase;
 }
-.header .menu .navbar ul li a:hover {
+.header .menu .navbar ul li:hover {
   text-shadow: 0 0 3px #03d8e8;
   scale: 105%;
   transition: 0.4s;
@@ -161,7 +161,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 70px;
+  padding: 95px;
 }
 .carrusel .carrusel-border {
   display: flex;
@@ -615,6 +615,9 @@ html {
   .header .menu .logo a {
     width: 100%;
   }
+  .header .menu .logo img {
+    width: 15em;
+  }
   .header .menu .navbar .lista-menu {
     display: none;
   }
@@ -630,7 +633,7 @@ html {
     background-color: rgba(78, 78, 78, 0.308);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
-    width: 100vh;
+    width: auto;
     height: auto;
     text-align: center;
     justify-content: center;
@@ -694,7 +697,7 @@ html {
     background: none;
   }
   .carrusel .carrusel-border .carrusel-titulo {
-    padding: 0 100px;
+    padding: 0 0px;
   }
   .carrusel .carrusel-border .carrusel-titulo h2 {
     font-size: 40px;
@@ -713,6 +716,12 @@ html {
   #seccion2 {
     background-color: #e7decc;
     padding-bottom: 75px;
+  }
+  #seccion2 .coctel-titulo .coctel-texto h2 {
+    font-size: 35px;
+  }
+  #seccion2 .coctel-titulo img {
+    display: none;
   }
   #seccion2 .coctel {
     display: grid;
@@ -786,8 +795,37 @@ html {
     justify-content: center;
     text-align: center;
   }
+  #footer .redes {
+    padding-top: 65px;
+    font-size: 30px;
+    border-top: 2px solid #946b1a;
+    margin-top: -20px;
+  }
+  #footer .redes ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 0;
+  }
+  #footer .copy {
+    width: 100%;
+  }
+  #footer .copy P {
+    text-align: center;
+  }
+  #footer .copy ul {
+    display: block;
+    width: 100%;
+  }
+  #footer .copy ul li {
+    text-align: center;
+  }
 }
 @media (max-width: 950px) {
+  .header .svg {
+    display: none;
+  }
   #main-historia .historia-text {
     justify-content: center;
     text-align: center;
